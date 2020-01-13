@@ -1,0 +1,28 @@
+body{
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    color: white;
+    z-index: 10;
+}
+
+.menu_logo{
+    padding: 10px;
+}
+
+.youtube_logo{
+    padding: 10px;
+
+}
+
+#searc_bar{
+    float: right;
+}
