@@ -1,3 +1,9 @@
+html, body {
+    background-color: whitesmoke;
+}
+
+
+
 .search_bar{
 float:left;
 
@@ -20,9 +26,13 @@ margin: 0 1.5%;
 width: 63%;
 }
 aside{
+    position: relative;
     float:right;
     margin: 0 1.5%;
     width: 30%;
+    left: 100px;
+   
+    background-color: white;
 }
 footer{
     clear:both;
