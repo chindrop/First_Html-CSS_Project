@@ -1,138 +1,147 @@
-<!DOCTYPE HTML>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Youtube clone</title>
-	<link rel="stylesheet" href="index.css">
-	<script src="https://kit.fontawesome.com/d4de0f4540.js" crossorigin="anonymous"></script>
-
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<title>Youtube</title>
 </head>
+
+
+
 <body>
+
 	<header>
 		<nav>
-			<div class="nav left-side-links">
-				<img src="https://img.icons8.com/color/48/000000/menu.png" alt="menu_logo"
-					style="width:20px; height:20px;" class="menu_logo" />
-				<img src="https://archive.ph/Bss88/51a3832e6af6792add876216da444db23a4bea96.png
-			" alt="youtube_logo" style="width:80px; height:20px;" class="youtube_logo" />
+			<ul>
+				<li>
+					<a href="#"><i class="fas fa-align-justify"></i></a>
+				</li>
+				<li>
+					<img src="https://archive.ph/Bss88/51a3832e6af6792add876216da444db23a4bea96.png
+			" alt="youtube_logo" style="width:80px; height:20px;" id="youtube_logo" />
+				</li>
+				<li>
+					<form class="" action="index.html" method="post">
+						<input type="text" placeholder=" Search" />
+						<button type="button">
+							<i class="material-icons">search</i>
+						</button>
+					</form>
+				</li>
+				<li>
+					<a href="#"><i class="material-icons">video_call</i></a>
+				</li>
+				<li>
+					<a href="#"><i class="material-icons">apps</i></a>
+				</li>
+				<li>
+					<a href="#"><i class="material-icons">mail</i></a>
+				</li>
+				<li>
+					<a href="#"><i class="material-icons">notifications</i></a>
+				</li>
+				<li>
+					<a href="#"><i class="far fa-user-circle"></i></a>
+				</li>
+			</ul>
 
-			</div>
-			<!--searh bar-->
-			<div class="nav search_bar">
-				<input type="search" placeholder="Search" id="search_bar_length">
-				<button type="button" id="search_button"><i class="fas fa-search"></i></button>
-			</div>
 
-			<!--right side of the search bar-->
-			<div class="nav right-nav-links">
-				<button type="button" class="fas fa-upload"></button>
-				<button type="button" class="signin">Sign in</button>
 
-			</div>
+
+
+
+
+
+
+
+
 		</nav>
 	</header>
+	<main class="flex-conatainer">
+		<section class="video-section">
+			<div class="main-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/48YW53TPbhw"allowfullscreen></iframe>
+</div>
 
-		<!--Videos-->
-	
-		<section id ="group">
-			<section>
-				<figure class="main-video">
-					<iframe width="560" height="300" src="https://www.youtube.com/embed/k6KcaMffxac" frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				</figure>
-		
-				<div class="info_box">
+
+			<article class="details">
+				<div class="title">
 					<h2 style=font-size:20px;>Contributing to Open Source Part I: The Easy Way </h2>
-					<button type="button" id="T_button">T</button>
-					<p id="author">The Odin Project</p>
-					<button type="button">Subscribe</button>
-		
-					<div class="interaction_buttons_left">
-		
-						<button type="button" class="fas fa-folder-plus"></button>
-						<button type="button" class="fas fa-share"></button>
-						<button type="button" class="fas fa-ellipsis-h"></button>
-					</div>
-					<div class="interaction_buttons_right">
-						<button type="button" class="fas fa-thumbs-up"></button>
-						<label>359</label>
-						<button type="button" class="fas fa-thumbs-down"></button>
-						<label>14</label>
-					</div>
 				</div>
-		
-			
-			<!--comments and description-->
-					<div id="description_text">
-						<p id="authors_text">
-							Published on Feb 27, 2014
-							How do you contribute to open source? In this video, I'll describe the easiest way to make a
-							simple<br />
-							contribution to an open source project -- without using the command line, a text editor, "forking a
-							repo", or<br />
-							even touching Git outside of Github. I'll also describe what kinds of contributions open source
-							software
-							projects are<br />
-							typically looking for. As an example, I use submitting a student solution to a web development
-							exercise
-							from The Odin Project,<br />
-							a free online curriculum for learning web development with Ruby on Rails. You can find more
-							information
-							about that project <br />
-							at http://theodinproject.com.<br />
-		
-		
-						<br />	<button type="button" id="show_more">SHOW MORE </button>
-					
-						</p>
-					</div>
-					</section>
-		
-		
-		
-				<!--side videos-->
-				<aside>
-					<figure>
-							<iframe width="120" height="90" src="https://www.youtube.com/embed/mENDYhfxH-o" frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
-							<h2>Contributing to Open Source Part II: The Easy Way </h2>
-							<a href="#comments">6 comments</a>
-		
-					</figure>
-		
-				</aside>
-		
-		
+				<div id="description_text">
+					<p id="authors_text">
+						SHATTA WALE - Everybody Likes My Tin by PPV HD
+					</p>
+				</div>
+			</article>
 		</section>
-		
-		
-				<footer >
-					<div>
-						<button type="button"><img src="https://archive.ph/Bss88/51a3832e6af6792add876216da444db23a4bea96.png
-							" alt="youtube_logo" style="width:80px; height:20px;" class="youtube_logo" /></button>
-						<div class="dropdown">
-							<button class="dropbtn" disabled>Language: English
-								<i class="fa fa-caret-down"></i>
-							</button>
-						</div>
-						<div class="dropdown">
-							<button class="dropbtn" disabled>Location:Netherlands
-								<i class="fa fa-caret-down"></i>
-							</button>
-						</div>
-						<div class="dropdown">
-							<button class="dropbtn" disabled>Restricted Mode:Off
-								<i class="fa fa-caret-down"></i>
-							</button>
-						</div>
-						<button type="button"><i class="fas fa-hourglass-half"></i>History</button>
-					</div>
-				</footer>
-			
-		</body>
-		
-		</html>
+
+		<!--side videos-->
+		<aside class="side-videos">
+			<h3> Up Next </h3>
+			<div class="recommended">
+				<img src="http://i3.ytimg.com/vi/ImTStSYnh-o/maxresdefault.jpg" height="94" width="168">
+
+				<div class="details">
+					<p>Title</p>
+					<p>Channel</p>
+					<p>Views</p>
+				</div>
+			</div>
+
+			<div class="recommended">
+				<img src="http://i3.ytimg.com/vi/tWg7xbTiDF4/maxresdefault.jpg" height="94" width="168">
+
+				<div class="details">
+					<p>Title</p>
+					<p>Channel</p>
+					<p>Views</p>
+				</div>
+			</div>
+
+
+			<div class="recommended">
+				<img src="http://i3.ytimg.com/vi/-DB3oND8hVA/maxresdefault.jpg" height="94" width="168">
+
+				<div class="details">
+					<p>Title</p>
+					<p>Channel</p>
+					<p>Views</p>
+				</div>
+			</div>
+
+			<div class="recommended">
+				<img src="http://i3.ytimg.com/vi/lGNQzxzv6KA/maxresdefault.jpg" height="94" width="168">
+
+				<div class="details">
+					<p>Title</p>
+					<p>Channel</p>
+					<p>Views</p>
+				</div>
+			</div>
+
+		</aside>
+
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

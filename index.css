@@ -1,243 +1,92 @@
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
 
-/* Our Code */
+  iframe {
+    border: 0px;
+  }
 
-*{
-    box-sizing: border-box;
-    font-family: Roboto, Arial, sans-serif;
-}
+  main {
+    margin: 2% 3%;
+  }
+  
+  form {
+    display: flex;
+    padding-top: 10px;
+  }
 
-html{
-    font-size: 60%;
-}
-
-header{
-    width: 100%;
-    height: auto;
-}
-
-
-nav{
-    display: inline-flex;
-   flex-flow:row wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    padding: 10px 20px;
+  input[type="text"] {
+    width: 15rem;
+  }
+  
+  ul a i {
+    font-size: 1.6rem;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: grey;
+    color: white;
+  }
+  
+  li:nth-child(n + 4) {
+    float: right;
+  }
+  
+  form {
+    margin-left: 40px;
+    height: 100%;
+  }
+  
+  #main-video iframe {
+    position: absolute;
     top: 0;
-    z-index: 10;
-    position: fixed;
-}
-
-.menu_logo{
-  margin: 10px;
-}
-
-.youtube_logo{
-    margin: 10px;
-}
-.left-side-links{
-    justify-content: flex-start;
-    margin-right:40px;
-  }
-  
-  .right-nav-links{
-      justify-self: end;
-      margin-left:190px;
-      padding-left:10px;
-  }
-
-  .nav {
-      display: flex;
-
-  }
-.search_bar{
-  display:flex;
-  justify-content: center;
-  height:35px;
-  border: none;
-  }
-
-  input {
-      display: flex;
-      flex-grow: 1;
-      overflow: hidden;
-      border: 1px solid gray;
-      background-color: white;
-      outline: none;
-      border-radius: 1px;
-      border-radius: none;
-      text-align: start;
-  }
-
-  .signin{
-        margin-left: 240px;
-  }
-
-
-  
-  #search_bar_length{
-      padding-right:2px 8px;
-      width:575px;
-  }
-  
-  #search_button{
-  width:60px;
-  border: none;
-  background-color: whitesmoke;
-  padding-left: 26px;
-  padding-right: 26px;
-  cursor: pointer;
-  border-style: none;
-  font-size:  1.7em;
-  }
-  .interaction_buttons_left{
-    border-radius: 100%;
-    justify-self: end;
-    height: 100%;
+    left: 0;
     width: 100%;
-}
-.interaction_buttons_right{
-    border-radius: 100%;
-    justify-self: end;
     height: 100%;
-    width: 100%;
-}
+  }
 
-  /*main section*/
-section{
-  display: grid;
-  grid: 
-  'video video' max-content 
-  'sidebar sidebar' max-content
-  / 5fr 3fr;
-}
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-/*video */
-.main-video{
-  grid-area: video;
-  padding: 20px;
-  padding-left: 50px;
-}
+  #youtube_logo{
+    color:red;
+  }
 
-.info_box > p{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-}
+  .main-video {
+    position: relative;
+    padding-bottom: 14.0625%; /* 16:9 */
+    padding-top: 25px;
+    min-width: 560px;
+    min-height: 315px;
+  }
+  
+  .video_section {
+    padding: 20px 40px;
+    width: 60%;
+  }
 
-.info_box > div{
-  display: grid;
-  grid: 1fr/repeat(5,60px);
-  justify-content: end;
-  column-gap: 5px;
-  height: 100%;
-  width: 100%;
-}
-
-#description_text{
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  align-items: center;
-  column-gap: 5px;
-
-}
-
-
-/*recommended videos*/
-
-aside{
-  grid-area: sidebar;
-  display: grid;
-  row-gap: 5px;
-  padding: 20px;
-  justify-content: start;
-  float:right;
-}
-
-
-    /*
-    #sign_in {
-        width: 10%;
-      }
-      .sign_in button {
-        height: 70%;
-        background-color: rgb(22, 122, 198);
-        width: 80%;
-      
-        border-radius: 2px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgb(22, 122, 198);
-      }
-      #sign_in span {
-        width: 80%;
-        font-size: 100%;
-        color: white;
-        border-width: 0px;
-        border-style: none;
-        margin: 0px;
-        padding: 0px;
-        border-color: white;
-      }
-      #sign_in {
-        font-size: 100%;
-        background-color: transparent;
-        border-width: 0px;
-        border-style: none;
-        margin: 0px;
-        padding: 10px;
-        border-color: white;
-      }*/
+  .title{
+    font-size: 1.2rem;
+  }
