@@ -50,31 +50,82 @@ table {
 	border-spacing: 0;
 }
 
-nav{
-    display: inline-flex;
-    grid: 56px 1fr / 100px 1fr repeat(3,56px);
-    width: 100%;
-    grid-gap: 10px;
-    align-items: center;
-    padding: 0 10px;
+/* Our Code */
+
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
 }
 
+html{
+    font-size: 60%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+
+nav{
+    display: inline-flex;
+   flex-flow:row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+.menu_logo{
+  margin: 10px;
+}
+
+.youtube_logo{
+    margin: 10px;
+}
 .left-side-links{
-  float:left;
-  margin-right:40px;
+    justify-content: flex-start;
+    margin-right:40px;
   }
   
   .right-nav-links{
-      float:right;
+      justify-self: end;
       margin-left:190px;
       padding-left:10px;
   }
 
+  .nav {
+      display: flex;
+
+  }
 .search_bar{
   display:flex;
   justify-content: center;
-  height:40px;
+  height:35px;
+  border: none;
   }
+
+  input {
+      display: flex;
+      flex-grow: 1;
+      overflow: hidden;
+      border: 1px solid gray;
+      background-color: white;
+      outline: none;
+      border-radius: 1px;
+      text-align: start;
+      border-radius: none;
+  }
+
+  .signin{
+        margin-left: 240px;
+  }
+
+
   
   #search_bar_length{
       padding-right:2px 8px;
@@ -82,7 +133,14 @@ nav{
   }
   
   #search_button{
-  width:40px;
+  width:60px;
+  border: none;
+  background-color: whitesmoke;
+  padding-left: 26px;
+  padding-right: 26px;
+  cursor: pointer;
+  border-style: none;
+  font-size:  1.7em;
   }
   .interaction_buttons_left{
     border-radius: 100%;
