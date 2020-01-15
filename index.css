@@ -10,6 +10,8 @@ body {
   main {
     margin: 2% 3%;
   }
+
+  
   
   form {
     display: flex;
@@ -56,6 +58,20 @@ body {
     margin-left: 40px;
     height: 100%;
   }
+
+  nav{
+   
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10.5px 20px;
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
   
   #main-video iframe {
     position: absolute;
@@ -69,14 +85,10 @@ body {
     display: flex;
     flex-flow: row wrap;
   }
-
-  #youtube_logo{
-    color:red;
-  }
-
+ 
   .main-video {
     position: relative;
-    padding-bottom: 14.0625%; /* 16:9 */
+  
     padding-top: 25px;
     min-width: 560px;
     min-height: 315px;
@@ -89,4 +101,25 @@ body {
 
   .title{
     font-size: 1.2rem;
+  }
+
+  #youtube_logo {
+    font-size: 2rem;
+  }
+
+  .side-videos {
+    display: flex;
+    flex-flow: column nowrap;
+   padding: 0 40px;
+  }
+
+  .recommended{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 8px;
+  }
+
+  .details {
+    margin: 0px;
+    margin-left: 8px;
   }
