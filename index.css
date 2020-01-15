@@ -117,8 +117,8 @@ nav{
       background-color: white;
       outline: none;
       border-radius: 1px;
-      text-align: start;
       border-radius: none;
+      text-align: start;
   }
 
   .signin{
