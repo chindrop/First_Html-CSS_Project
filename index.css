@@ -125,14 +125,15 @@ body {
     margin-left: 8px;
   }
 
+  .video-section{
+    float:left;
+    margin: 58px 3% 2%; 
+  }
   .side-videos{
       grid-area: sidebar;
       display: grid;
-      
       justify-content: start;
       float:right;
-      margin-top:-400px;
-      margin-left: 450px;
       width: 30%;
     grid-column-gap: 5px;
   
