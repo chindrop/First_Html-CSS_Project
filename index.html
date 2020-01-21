@@ -15,127 +15,319 @@
 <body>
 
 	<header>
-		<nav>
-			<div class="nav nav-left">
-				<button type="button" name="button" class="fas fa-bars"></button>
-				<img class="nav-logo" src="https://archive.ph/Bss88/51a3832e6af6792add876216da444db23a4bea96.png"
-					alt="youtube logo">
-			</div>
-			<div class="nav_search_button">
-				<input type="text" name="input" id="search-bar" placeholder="Search">
-				<button type="button" class="search-button"><i class="fas fa-search"></i></button>
-			</div>
-			<div class="nav nav-right">
-				<button type="button" name="button" class="button fas fa-upload"></button>
-				<button type="button" name="button" class="button fas fa-th"></button>
-				<button type="button" name="button" class="button fas fa-bell"></button>
-				<img class="logo-right" src="https://miro.medium.com/max/3150/1*ymMI142YPuGSUCmZIs-EaA.png"
-					alt="microverse logo">
-			</div>
-		</nav>
-	</header>
-	<main class="flex-conatainer">
 
-		<section class="video-section">
-			<h2> Main Video</h2>
-			<div class="main-video">
+		<!--right side images-->
+		
+		<img src="./img/menu.svg" alt="Menu" class="header-image">
+		<img src="./img/youtube.png" alt="YouTube" class="header-image">
+		<!--search bar-->
+		<form class=" search-form">
+			<input type="text" class="search-bar">
+			<button class="search-Button">  </button>
+		</form>
+		<!--left side nav bar-->
+		<img src="./img/upload.png" alt="Create a video" class="header-image">
+		<img src="./img/apps.png" alt="Apps" class="header-image">
+		<img src="./img/bells.svg" alt="Notifications" class="header-image">
+		<img class="header-image" src="https://miro.medium.com/max/3150/1*ymMI142YPuGSUCmZIs-EaA.png"
+			alt="microverse logo">
+		</div>
+	
+
+	</header>
+
+
+	<main>
+		<section>
+			<div id="main-video">
 				<iframe width="840" height="315" src="https://www.youtube.com/embed/48YW53TPbhw"
 					allowfullscreen></iframe>
 			</div>
-
-
-			<article class="details">
-				<div class="title">
-					<h2 style=font-size:20px;> SHATTA WALE - Everybody Likes My Tin by PPV HD</h2>
-				</div>
-				<div class="interaction_buttons_right">
-					<button type="button" class="fas fa-thumbs-up"></button>
-					<label>359</label>
-					<button type="button" class="fas fa-thumbs-down"></button>
-					<label>14</label>
-					<button type="button" class="fas fa-share"></button>
-
-					<button type="button" class="fas fa-folder-plus"></button>
-					<button type="button" class="fas fa-ellipsis-h"></button>
-
-
+			<div id="main-info1">
+				<div class="main-video-name">
+					<h1>SHATTA WALE - Everybody Likes My Tin by PPV HD</h1>
 				</div>
 
-				<div id="description_text">
 
-
-					<p><button type="button" id="subscribe-button">SUBSCRIBE</button></p>
-					<a><img src="img/sh.png" alt="singers-logo" id="singers-logo" />
-					</a>
-					<p id="authors_text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-						Sit amet luctus venenatis lectus magna fringilla urna .<br />
-						Adipiscing bibendum est ultricies integer quis.<br />
-						Amet aliquam id diam maecenas ultricies.<br />
-						Elementum eu facilisis sed odio morbi.
-						<a href="#" class="show-more bold-text">SHOW MORE</a>
-					</p>
-
-
+				<div class="info-container">
+					<span class="video-views"> 67,645,387 views</span>
+					<span class="video-date">• Published on Feb 29, 2012</span>
+					<img src="./img/rates.png" class="video-rates" />
 				</div>
+			</div>
+			<div id="main-info2">
+				<div class="first-row">
+					<span class="singers-logo">
+						<img class="logo" src="./img/sh.png" />
+					</span>
+					<span class="singers-name">Elementum eu facilisis </span><br />
+					<span class="sub-counter">154K subscribers</span><br />
+					<button class="subscribe-button">SUBSCRIBE</button>
+				</div>
+				<div class="description">
+					<a href="">https://shattawale.com/</a>
+					<p class="description-text">Tour Dates on his website</p>
+					<h3 class="description-toggle">SHOW MORE</h3>
+				</div>
+			</div>
 
-			</article>
+			<!--comments-->
+
+			<div id="main-comment">
+				<div class="comment-header">
+					<span class="comments">36,171 Comments</span>
+					<span class="sort-button">
+						<div class="bar-top"></div>
+						<div class="bar-mid"></div>
+						<div class="bar-bottom"></div>
+					</span>
+					<span class="sort-text">SORT BY</span>
+				</div>
+				<div class="comments-container">
+					<span class="user-logo">
+						<img class="user" src="img/user.jpg" />
+					</span>
+					<span class="user-comments">
+						<input class="user-comment-input" placeholder="Add a public comment..." />
+					</span>
+				</div>
+			</div>
+
+
+			<!--the comments itself-->
+
+			<div id="main-comments">
+				<div class="comments-block">
+					<div class="comment">
+						<span class="commenter-logo-container">
+							<img class="commenter-logo" src="./img/commenter.jpg" alt="commenter" />
+						</span>
+						<div class="comment-wrapper">
+							<div class="commenter-username">
+								Jesse's Auditorium
+								<span class="comment-date">2 years ago</span>
+							</div>
+							<div class="commenter-comment">
+								Anyone else think he looks like a Jamaican singer?
+							</div>
+							<div class="comment-toolbar">
+								<img class="thumbs-up" src="./img/thumbs-up.png" />
+								<span class="score">10K</span>
+								<img class="thumbs-down" src="./img/thumbsdown.png" />
+								<span class="reply-button">REPLY</span>
+							</div>
+						</div>
+						<div class="comment-action-button"></div>
+					</div>
+					<div class="sub-comments">
+						<span>View 335 replies</span><span class="down-arrow">&#8964;</span>
+					</div>
+
+					<div class="comment-block">
+						<div class="comment">
+							<span class="commenter-avatar-container">
+								<img class="commenter-avatar" src="./img/user.jpg" alt="commenter" />
+							</span>
+							<div class="comment-wrapper">
+								<div class="commenter-username">
+									Freelancer Fabba<span class="comment-date">7 months ago</span>
+								</div>
+								<div class="commenter-comment">
+									I interviewed Estas 2 times and also recorded his concert
+									Please subscribe to my channel for more :)
+								</div>
+								<div class="comment-toolbar">
+									<img class="thumbs-up" src="img/thumbs-up.png" />
+									<span class="score">977</span>
+									<img class="thumbs-down" src="./img/thumbsdown.png" />
+									<span class="reply-button">REPLY</span>
+								</div>
+							</div>
+							<div class="comment-action-button"></div>
+						</div>
+						<div class="sub-comments">
+							<span>View 33 replies</span><span class="down-arrow">&#8964;</span>
+						</div>
+					</div>
+				</div>
+				<div class="comment-block">
+					<div class="comment">
+						<span class="commenter-avatar-container">
+							<img class="commenter-avatar" src="./img/commenter-2.jpg" alt="commenter" />
+						</span>
+						<div class="comment-wrapper">
+							<div class="commenter-username">
+								misut gharoo
+								<span class="comment-date">3 weeks ago</span>
+							</div>
+							<div class="commenter-comment">
+								I did not remember his name so i wrote 'jesus guitar' and that
+								leads me here
+							</div>
+							<div class="comment-toolbar">
+								<img class="thumbs-up" src="./img/thumbs-up.png" />
+								<span class="score">463</span>
+								<img class="thumbs-down" src="./img/thumbs-down.png" />
+								<span class="reply-button">REPLY</span>
+							</div>
+						</div>
+						<div class="comment-action-button"></div>
+					</div>
+					<div class="sub-comments">
+						<span>View 17 replies</span><span class="down-arrow">&#8964;</span>
+					</div>
+				</div>
+				<div class="comment-block">
+					<div class="comment">
+						<span class="commenter-avatar-container">
+							<img class="commenter-avatar" src="./img/commenter-3.jpg" alt="commenter" />
+						</span>
+						<div class="comment-wrapper">
+							<div class="commenter-username">
+								Mohamed Bigi
+								<span class="comment-date">1 month ago</span>
+							</div>
+							<div class="commenter-comment">
+								legend has it that that stick wasn't on fire before he started
+								playing
+							</div>
+							<div class="comment-toolbar">
+								<img class="thumbs-up" src="./img/thumbs-up.png" />
+								<span class="score">468</span>
+								<img class="thumbs-down" src="./img/thumbsdown.png" />
+								<span class="reply-button">REPLY</span>
+							</div>
+						</div>
+						<div class="comment-action-button"></div>
+					</div>
+					<div class="sub-comments">
+						<span>View 8 replies</span><span class="down-arrow">&#8964;</span>
+					</div>
+				</div>
+				<div class="comment-block">
+					<div class="comment">
+						<span class="commenter-avatar-container">
+							<img class="commenter-avatar" src="./img/commenter.jpg" alt="commenter" />
+						</span>
+						<div class="comment-wrapper">
+							<div class="commenter-username">
+								El'amin mochichi
+								<span class="comment-date">1 month ago</span>
+							</div>
+							<div class="commenter-comment">
+								That incense burner adds +10 boost in all skills
+							</div>
+							<div class="comment-toolbar">
+								<img class="thumbs-up" src="./img/thumbs-up.png" />
+								<span class="score">490</span>
+								<img class="thumbs-down" src="./img/thumbsdown.png" />
+								<span class="reply-button">REPLY</span>
+							</div>
+						</div>
+						<div class="comment-action-button"></div>
+					</div>
+					<div class="sub-comments">
+						<span>View 5 replies</span><span class="down-arrow">&#8964;</span>
+					</div>
+				</div>
+			</div>
 		</section>
+
+
+<!--side videos-->
+		<aside>
+			<div id="autoplay-container">
+				<div class="autoplay-header">
+					<span class="upnext-button">UpNext</span>
+					<img class="autoplay-button" src="./img/autoplay.png" />
+				</div>
+				<div class="autoplay-video">
+					<img src="http://i3.ytimg.com/vi/ImTStSYnh-o/maxresdefault.jpg" height="94" width="168" class="thumbnail"
+				alt="recommended videos" />
+					<span class="metadata">
+						<p class="autoplay-video-title">
+						Got Talent Global
+						</p>
+						<div class="autoplay-video-author">Talent Global</div>
+						<div class="autoplay-video-views">4.3M views</div>
+					</span>
+				</div>
+			</div>
+			<div class="sidebar-video">
+				<img src="http://i3.ytimg.com/vi/tWg7xbTiDF4/maxresdefault.jpg" height="94" width="168" class="thumbnail"
+				 alt="side video" />
+
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						KiDi - Sugar (The Movie)
+					</p>
+					<div class="autoplay-video-author">Lynx Entertainment</div>
+					<div class="autoplay-video-views">147M views</div>
+				</span>
+			</div>
+			<div class="sidebar-video">
+				<img src="http://i3.ytimg.com/vi/-DB3oND8hVA/maxresdefault.jpg" height="94" width="168" class="thumbnail"
+				alt="side video" />
+
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						Bosom P-Yung - Attaa Adwoa | A FLOWRHYTHMZ SHOW
+					</p>
+					<div class="autoplay-video-author">Flowrhythmz</div>
+					<div class="autoplay-video-views">388 views</div>
+				</span>
+			</div>
+			<div class="sidebar-video">
+				<div class="recommended">
+				<img src="http://i3.ytimg.com/vi/rCymbQJxozI/maxresdefault.jpg" height="94" width="168" class="thumbnail"
+				 alt="side video" />
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						Joeboy - Don't Call Me Back (feat. Mayorkun) [Visualizer]
+					</p>
+					<div class="autoplay-video-author">emPawaAfrica</div>
+					<div class="autoplay-video-views">8.0M views</div>
+				</span>
+			</div>
+			
+			<div class="sidebar-video">
+				<img class="thumbnail" src="./img/thumbnail-5.jpg" />
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						Amazing street guitar performance by Imad Fares "...
+					</p>
+					<div class="autoplay-video-author">Jakub Heliniak</div>
+					<div class="autoplay-video-views">23 M views</div>
+				</span>
+			</div>
+			<div class="sidebar-video">
+				<img class="thumbnail" src="./img/thumbnail-6.jpg" />
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						Hang Massive - Once Again - 2011 ( hang drum duo ) ( HD )
+					</p>
+					<div class="autoplay-video-author">Hang Massive</div>
+					<div class="autoplay-video-views">41 M views</div>
+				</span>
+			</div>
+		
+			<div class="sidebar-video">
+				<img class="thumbnail" src="./img/thumbnail-10.jpg" />
+				<span class="metadata">
+					<p class="autoplay-video-title">
+						2CELLOS - Smells Like Teen Spirit [Live at Sydney Opera House]
+					</p>
+					<div class="autoplay-video-author">2CELLOS</div>
+					<div class="autoplay-video-views">18M views</div>
+				</span>
+			</div>
+		
+		</aside>
+
 	</main>
 
-	<!--comments-->
 
-
-
-	<!--side videos-->
-	<aside class="side-videos">
-		<h3> Up Next </h3>
-		<div class="recommended">
-			<img src="http://i3.ytimg.com/vi/ImTStSYnh-o/maxresdefault.jpg" height="94" width="168"
-				alt="recommended videos" />
-
-			<div class="details">
-				<p>Title</p>
-				<p> Got Talent Global</p>
-				<p>Recommended for you</p>
-			</div>
-		</div>
-
-		<div class="recommended">
-			<img src="http://i3.ytimg.com/vi/tWg7xbTiDF4/maxresdefault.jpg" height="94" width="168" alt="side video" />
-
-			<div class="details">
-				<p>KiDi - Sugar (The Movie)</p>
-				<p>Lynx Entertainment</p>
-				<p>549K</p>
-			</div>
-		</div>
-
-
-		<div class="recommended">
-			<img src="http://i3.ytimg.com/vi/-DB3oND8hVA/maxresdefault.jpg" height="94" width="168" alt="side video" />
-
-			<div class="details">
-				<p>Bosom P-Yung - Attaa Adwoa | A FLOWRHYTHMZ SHOW</p>
-				<p> Flowrhythmz</p>
-				<p>388 views</p>
-			</div>
-		</div>
-
-		<div class="recommended">
-			<img src="http://i3.ytimg.com/vi/rCymbQJxozI/maxresdefault.jpg" height="94" width="168" alt="side video" />
-
-			<div class="details">
-				<p>Joeboy - Don't Call Me Back (feat. Mayorkun) [Visualizer]</p>
-				<p> emPawa Africa</p>
-				<p>8.0M views</p>
-			</div>
-		</div>
-
-	</aside>
-
-
+	
 
 </body>
 
