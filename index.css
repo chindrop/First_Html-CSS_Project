@@ -80,6 +80,10 @@ section {
   float: right;
   height: 2000px;
 }
+iframe{
+  width: 840px;
+  height:399.375px;
+}
 h1 {
   font-size: 23px;
   font-weight: 400;
@@ -137,7 +141,7 @@ input {
   border-radius: 2px;
   width: 105px;
   height: 36px;
-  margin-top: 10px;
+  margin-top: -70px;
   outline: none;
 }
 .subscribe-button:active{
