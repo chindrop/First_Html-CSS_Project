@@ -20,7 +20,9 @@ header {
 .header-image {
   height: 45%;
   margin: 0 1em;
-  opacity: 0.3;
+}
+#images{
+  opacity:0.3;
 }
 #search-bar{
   margin-right: -1px;
@@ -341,7 +343,7 @@ height:50px;
 aside {
   position: absolute;
   right: 0;
-  width: 35%;
+  width: 30%;
   padding: 24px 24px 0;
   background-color: hsl(0, 0%, 98%);
   height: 2000px;
