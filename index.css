@@ -228,6 +228,7 @@ height:50px;
 .sort-text {
   cursor: pointer;
   font-size: 14px;
+ 
 }
 .comments-container {
   margin-top: 24px;
@@ -236,6 +237,7 @@ height:50px;
   display: inline-block;
   height: 48px;
   width: 5%;
+  margin-bottom:5px;
 }
 .user {
   border-radius: 50%;
@@ -252,6 +254,7 @@ height:50px;
   text-align: top;
   background-color: #fafafa;
   cursor: pointer;
+  margin-left:30px;
 }
 
 /*the comments itself*/
