@@ -28,19 +28,42 @@ header {
   padding-left: 10px;
   border: 1px solid lightgray;
   border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    max-width: 100%;
+    text-align: inherit;
+    width: 100%;
+    flex-basis: .000000001px;
 }
-
+input {
+  font-size: 15px;
+  padding-left:4px;
+  color:grey;
+}
 .search-form {
   flex: 1;
   display: flex;
   justify-content: center;
   height: 50%;
 }
+
+.fa-search{
+    padding:4px 6px 4px 6px;
+    width:45px;
+    color:#787878;
+    background-color:transparent;
+  }
 #search-Button{
-  width: 15px;
+  width: 65px;
   height: 23px;
   margin-left: -50px;
 }
+
 /*main video style*/
 
 main {
@@ -68,20 +91,20 @@ input {
  
   border-bottom: 0.5px solid rgb(186, 186, 186);
 }
-/* #main-info2 {
+ #main-info2 {
   
   border-bottom: 0.5px solid rgb(186, 186, 186);
-} */
-/* .info-container {
+} 
+ .info-container {
   height: 41px;
-} */
-/* .video-views {
+} 
+ .video-views {
   color: #606060;
   float: left;
   margin-top: 10px;
-} */
+} 
 
-/* .video-date {
+ .video-date {
   padding-left: 4px;
   color: #606060;
   float: left;
@@ -89,107 +112,20 @@ input {
 }
 .video-rates {
   float: right;
-} */
-/* .subscribe-button {
+} 
+ .subscribe-button {
+  font-size: 13px;
   color: #fff;
-  height: 36px;
-  padding: 10px 16px;
-  margin: 0 4px;
-  background-color: #cc0000;
+  background-color: #CC0000;
   float: right;
-} */
-.fa-bars {
-  vertical-align: middle;
-  cursor: pointer;
-  align-content: center;
-  margin-right: 20px;
-  font-size: 2rem;
-}
-
-.social-bar{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: gray;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 20px;
-  font-size: 1.3rem;
-}
-
-
-
-.likes-dislikes-shares {
-  font-weight: bold;
-}
-
-fas .fa-thumbs-up, .fa-thumbs-down, .fa-share, .fa-folder-plus, .fa-ellipsis-h {
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-button, label, .fa-thumbs-up, .fa-thumbs-down, .fa-share, .fa-folder-plus, .fa-ellipsis-h {    
-  cursor: pointer;
-}
-/*social-bar end*/
-
-/*sentiment-bar start*/    
-.sentiment-bar {
-  width: 123px;
-  background: rgba(90, 90, 90, 0.5);
-  margin-left: -9px;
-  margin-top: 20px;
-  margin-bottom: -21px;
-}
-.inside-bar {
-  width: 71%;
-  height: 3px;
-  background: rgb(59, 59, 59);
-}
-/*sentiment-bar end*/
-
-/*main-content end*/
-
-.channel-section {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
-}
-
-.avatar-section {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-
-.channel-avatar-logo {
-  display: block;
-  margin-right: auto;
-}
-
-.channel-name {
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-  font-size: 1.4rem;
-}
-
-.fa-check-circle {
-  color: gray;
-  margin-left: 2px;
-  font-size: 1.2rem;
-}
-
+  width: 137px;
+    height: 36px;
+    border-radius: 2px;
+} 
 .subscribers {
   color: rgb(110, 109, 109);
   font-size: 1.2rem;
   line-height: 2;
-}
-
-.title-channel {
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .subscribe-button {
@@ -203,41 +139,9 @@ button, label, .fa-thumbs-up, .fa-thumbs-down, .fa-share, .fa-folder-plus, .fa-e
   margin-top: 10px;
   outline: none;
 }
-
 .subscribe-button:active{
 background-color: rgb(175, 0, 0)
 }
-
-.description-section {
-  margin: 17px 0px 20px 58px;
-}
-
-.description-content {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 2.1rem;
-}
-
-div .description-section .show-more {
-  margin-top: 8px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 0.007px;
-  text-transform: uppercase;
-  border-style: none;
-  background: transparent;
-  padding-left: 0;
-  color: gray;
-  outline: none;
-}
-
-.comments {
-  text-align: center;
-  font-size: 1.4rem;
-  padding-top: 32px;
-  font-weight: 400;
- }
-/*  
 .first-row {
   margin-bottom: 12px;
   padding-top: 16px;
@@ -258,23 +162,25 @@ div .description-section .show-more {
   color: #606060;
   font-size: 13px;
   margin-left: 60px;
-} */
-/* .description {
+} 
+ .description {
   font-size: 15px;
   margin-left: 60px;
-} */
-/* .logo {
+} 
+ .logo {
   border-radius: 50%;
 width:60px;
 height:50px;
-} */
-/* .description-text {
-  padding: 25px 0;
+} 
+ .description-text {
+  padding: 12px 0;
+  font-size: 14px;
 }
 .description-toggle {
   cursor: pointer;
   color: #606060;
-} */
+  font-size: 12px;
+} 
 
 /*comments*/
 
@@ -286,7 +192,10 @@ height:50px;
 }
 .comments {
   margin-right: 35px;
+  font-size:18px;
 }
+
+ 
 .sort-button {
   vertical-align: middle;
   display: inline-block;
@@ -313,6 +222,7 @@ height:50px;
 }
 .sort-text {
   cursor: pointer;
+  font-size: 14px;
 }
 .comments-container {
   margin-top: 24px;
@@ -362,6 +272,8 @@ height:50px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 15px;
+  display:flex;
+  flex-direction: row;
 }
 .comment-date {
   margin-left: 5px;
@@ -373,6 +285,8 @@ height:50px;
 }
 .comment-toolbar {
   margin: 5px 0;
+  display:flex;
+  flex-direction: row;
 }
 .thumbs-up {
   cursor: pointer;
@@ -388,23 +302,29 @@ height:50px;
   color: #606060;
   padding-right: 25px;
   padding-left: 5px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 10px;
 }
 .reply-button {
   cursor: pointer;
   color: #909090;
   margin-left: 20px;
+  font-size: 12px;
 }
 
 .sub-comments {
   cursor: pointer;
   margin: 5px 0 0 56px;
+  font-size: 14px;
+  color: #065FD4;
+  display:flex;
+  flex-direction:row;
 }
-.down-arrow {
+.fa-caret-down{
   cursor: pointer;
   margin-left: 4px;
-  font-size: 24px;
+  size: 20px;
+  color:#065FD4;
 }
 
 
