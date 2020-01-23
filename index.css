@@ -21,9 +21,13 @@ header {
   height: 45%;
   margin: 0 1em;
 }
-#images{
+#images {
   opacity:0.3;
 }
+#images1 {
+  opacity:0.3;
+}
+
 #search-bar{
   margin-right: -1px;
   height: 100%;
@@ -104,6 +108,8 @@ input {
 } 
  .info-container {
   height: 41px;
+  display: flex;
+  justify-content: space-between;
 } 
  .video-views {
   color: #606060;
@@ -118,13 +124,16 @@ input {
   margin-top: 10px;
 }
 .video-rates {
-  float: right;
-  font-size:12px;
-color:#909090;
-display:inline-flex;
-flex-direction: row;
+  display: flex;
+  flex: 0 1 398px;
+  justify-content: space-between;
+  align-items: center;
 
 } 
+.video-rates > a{
+  display: flex;
+  align-items: center;
+}
 .video-rates a{
   color:#909090;
 }
@@ -171,6 +180,12 @@ flex-direction: row;
   color: rgb(110, 109, 109);
   font-size: 1.2rem;
   line-height: 2;
+}
+
+button{
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 
 .subscribe-button {
