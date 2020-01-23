@@ -125,39 +125,38 @@ input {
 }
 .video-rates {
   display: flex;
-  flex: 0 1 398px;
+  flex: 0 2 398px;
   justify-content: space-between;
   align-items: center;
-
 } 
-.video-rates > a{
+.video-rates > button{
   display: flex;
   align-items: center;
 }
-.video-rates a{
+.video-rates button{
   color:#909090;
 }
 .thumbsup{
-  height:25px;
-  width:25px;
+  height:20px;
+  width:20px;
   color:#909090;
   opacity:0.3;
 }
 .thumbsdown{
-  height:25px;
-  width:25px;
+  height:20px;
+  width:20px;
   opacity: 0.7;
   color:#909090;
 }
 .share{
-  height:25px;
-  width:25px;
+  height:20px;
+  width:20px;
   opacity: 0.4;
   color:#909090;
 }
 .save{
-  height:25px;
-  width:30px;
+  height:20px;
+  width:25px;
   opacity: 0.4;
   color:#909090;
 }
@@ -249,18 +248,19 @@ height:50px;
 }
 .comment-header {
   height: 32px;
+margin-top:20px;
 }
 .comments {
   margin-right: 35px;
   font-size:18px;
+  float:left;
 }
 
  
 .sort-button {
-  vertical-align: middle;
-  display: inline-block;
   cursor: pointer;
   margin: 0 10px;
+float:left;
 }
 .bar-top {
   width: 20px;
@@ -283,10 +283,12 @@ height:50px;
 .sort-text {
   cursor: pointer;
   font-size: 14px;
- 
+color:grey;
 }
 .comments-container {
   margin-top: 24px;
+  display:inline-flex;
+  flex-direction: row;
 }
 .user-logo {
   display: inline-block;
@@ -300,15 +302,13 @@ height:50px;
   padding-left: 10px;
 }
 .user-comment-input {
-  vertical-align: top;
   border: 0;
   border-bottom: 0.5px solid rgb(186, 186, 186);
   outline: none;
-  width: 92%;
-  text-align: top;
   background-color: #fafafa;
   cursor: pointer;
-  margin-left:30px;
+  padding-top:10px;
+  width: 725px;
 }
 
 /*the comments itself*/
